@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+}
+
+#increment-btn {
+  background-color: red;
+  font-size: 20px;
+  color: #fff;
+  /* font-weight: 10px; */
+  border-radius: 8px;
+}
+
+#save-btn {
+  background-color: green;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+}
