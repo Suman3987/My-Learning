@@ -1,23 +1,23 @@
-//
-let saveEl = document.getElementById("save-el");
+// //
+// let saveEl = document.getElementById("save-el");
 
-let countEl = document.getElementById("count-el");
+// let countEl = document.getElementById("count-el");
 
-let count = 0;
+// let count = 0;
 
-function increment() {
-  count += 1;
-  countEl.innerText = count;
-}
+// function increment() {
+//   count += 1;
+//   countEl.innerText = count;
+// }
 
-function save() {
-  let saveAll = count + "  - ";
-  saveEl.textContent += saveAll;
-  countEl.textContent = 0;
-  count = 0;
+// function save() {
+//   let saveAll = count + "  - ";
+//   saveEl.textContent += saveAll;
+//   countEl.textContent = 0;
+//   count = 0;
 
-  // console.log(count);
-}
+// console.log(count);
+
 //////////////???????
 
 // let username = "per";
@@ -44,3 +44,13 @@ function save() {
 // welcomeEl.innerText = greeting + " " + name;
 
 // welcomeEl.innerText += '👋  ';
+
+///////
+let username = "per";
+// console.log(username);
+
+let message = "You have three new notifications";
+// console.log(username + " , " + message + " ! ");
+
+let messageToUser = message + ", " + username;
+console.log(messageToUser);
