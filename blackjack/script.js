@@ -31,23 +31,52 @@
 // }
 
 ///////blackjack///
-let firstCard = 10;
-let secondCard = 6;
-let cards = [firstCard, secondCard]; //array
-let sum = firstCard + secondCard;
+// let firstCard = getRandomCard();
+// let secondCard = getRandomCard();
+let cards = []; //array
+let sum = 0;
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 let message = " ";
 
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
 
+console.log(cards);
+
+// create a function , getRandomCard(), that always returns the number 5
+function getRandomCard() {
+  // if 1 -> return 11
+
+  // if 11-13 -> return 10
+
+  let randomNumber = Math.floor(Math.random() * 13) + 1;
+  if (randomNumber > 10) {
+    return 10;
+  } else if (randomNumber === 1) {
+    return 11;
+  } else {
+    return randomNumber;
+  }
+}
+
 function startGame() {
+  isAlive = true;
+
+  let firstCard = getRandomCard();
+  let secondCard = getRandomCard();
+  cards = [firstCard + secondCard];
+  // return Math.floor(Math.random() * 13) + 1;
   renderGame();
 }
 function renderGame() {
-  cardEl.textContent = "Cards: " + cards[0] + " + " + cards[1];
+  cardEl.textContent = "Cards ";
+
+  for (let i = 0; i < cards.length; i++) {
+    cardEl.textContent += cards[i] + " ";
+  }
+
   sumEl.textContent = "Sum: " + sum;
   if (sum <= 20) {
     message = "Do you want to draw a new card ?";
@@ -63,8 +92,9 @@ function renderGame() {
   // console.log(message);
 }
 function newCard() {
-  console.log("Drawing a new card from the deck !");
-  let card = 5;
+  // console.log("Drawing a new card from the deck !");
+  // use the getRandomCard() to set the value of card
+  let card = getRandomCard();
   sum += card;
   cards.push(card);
   console.log(cards);
@@ -85,3 +115,43 @@ function newCard() {
 // console.log(3 <= 2); // false
 
 // .....
+// returning values in functions
+// let player1Time = 102;
+// let player2Time = 107;
+
+// function getFastestRaceTime() {
+//   if (player1Time < player2Time) {
+//     return player1Time;
+//   } else if (player2Time < player1Time) {
+//     return player2Time;
+//   } else {
+//     return player1Time;
+//   }
+// }
+
+// let fastestRace = getFastestRaceTime();
+// console.log(fastestRace);
+
+// function getTotalRaceTime() {
+//   return player1Time + player2Time;
+// }
+// let totalTime = getTotalRaceTime();
+// console.log(totalTime);
+
+///////////////random number////
+let randomNumber = Math.floor(Math.random() * 6) + 1;
+console.log(randomNumber);
+
+// what does Math.random() do ?
+
+// Your answer:
+let flooredNumber = Math.floor(3.65457);
+console.log(flooredNumber);
+
+/////////Create a function , rollDice (), that returns a random number between 1 and 6
+
+function rollDice() {
+  let randomNumber = Math.floor(Math.random() * 6) + 1;
+  return randomNumber;
+}
+console.log(rollDice());
