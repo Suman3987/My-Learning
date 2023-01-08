@@ -12,3 +12,17 @@ let course = {
 };
 
 console.log(course.isFree);
+
+let airbnb = {
+  buildBy: "Per",
+  location: "north",
+  rooms: 6,
+  ticket: "true",
+  buildIn: 1896,
+  owners: ["william", "Peter", "Per"],
+  security: "eagle",
+};
+console.log(airbnb.location);
+console.log(airbnb.rooms);
+console.log(airbnb.owners[1]);
+console.log(airbnb.ticket);
