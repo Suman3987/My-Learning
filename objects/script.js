@@ -67,12 +67,28 @@ let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
 largeCountries.pop(); //remove item//
 
 //////
-largeCountries.push("Pakistan"); //add item
-console.log(largeCountries);
+// largeCountries.push("Pakistan"); //add item
+// console.log(largeCountries);
 
-largeCountries.shift(); //remove  1st item
+// largeCountries.shift(); //remove  1st item
 
-largeCountries.unshift("China"); // add item
-console.log(largeCountries);
+// largeCountries.unshift("China"); // add item
+// console.log(largeCountries);
 
 ///////Logical Operators/////////
+
+// let dayOfMonth = 31;
+// let weekDay = "Friday";
+
+// if (dayOfMonth === 31 && weekDay === "Friday") {
+//   console.log("😱");
+// }
+
+///////Rock papers scissors/////
+let hands = [" rock", "paper", "scissor"];
+
+function getHand() {
+  let randomIndex = Math.floor(Math.random() * 3);
+  return hands[randomIndex];
+}
+console.log(getHand());
