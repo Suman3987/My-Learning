@@ -38,3 +38,41 @@ function logData() {
   );
 }
 logData();
+
+// ////////// if else statement//////
+let age = 67;
+if (age < 6) {
+  console.log("free");
+} else if (age < 18) {
+  console.log("child discount");
+} else if (age < 27) {
+  console.log("student discount");
+} else if (age < 67) {
+  console.log("full price");
+} else console.log("senior citizen discount");
+
+/////// loops and Arrays///////
+
+// let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"];
+
+// console.log("The 5 largest countries in the world :");
+// for (let i = 0; i < largeCountries.length; i++) {
+//   console.log(" - " + largeCountries[i]);
+// }
+
+//////////////push, pop,unshift,shift challenge///////
+let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+
+///////
+largeCountries.pop(); //remove item//
+
+//////
+largeCountries.push("Pakistan"); //add item
+console.log(largeCountries);
+
+largeCountries.shift(); //remove  1st item
+
+largeCountries.unshift("China"); // add item
+console.log(largeCountries);
+
+///////Logical Operators/////////
