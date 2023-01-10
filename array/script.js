@@ -31,15 +31,30 @@ let cards = [7, 4];
 cards.push(6);
 // console.log(cards);
 
-let message = [
-  "Hey, how's it going?",
-  "I'm great , thank you ! How about you?",
-  "All good. Been working on my portfolio lately",
-];
+// let message = [
+//   "Hey, how's it going?",
+//   "I'm great , thank you ! How about you?",
+//   "All good. Been working on my portfolio lately",
+// ];
 
-let newMessage = "same here !";
+// let newMessage = "same here !";
 
-message.push(newMessage);
-console.log(message);
-message.pop(newMessage);
-console.log(message);
+// message.push(newMessage);
+// console.log(message);
+// message.pop(newMessage);
+// console.log(message);
+
+let fruit = ["🍎 ", "🍊 ", "🍎 ", "🍎 ", "🍊"];
+let appleShelf = document.getElementById("apple-shelf");
+let orangeShelf = document.getElementById("orange-shelf");
+
+function sortFruit() {
+  for (let i = 0; i < fruit.length; i++) {
+    if (fruit[i] === "🍎 ") {
+      appleShelf.textContent += "🍎 ";
+    } else if (fruit[i] === "🍊 ") {
+      orangeShelf.textContent += "🍊";
+    }
+  }
+}
+sortFruit();
