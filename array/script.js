@@ -53,7 +53,7 @@ function sortFruit() {
     if (fruit[i] === "🍎") {
       appleShelf.textContent += "🍎 ";
     } else if (fruit[i] === "🍊 ") {
-      orangeShelf.textContent === "🍊 ";
+      orangeShelf.textContent += "🍊 ";
     }
   }
 }
