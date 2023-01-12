@@ -8,3 +8,5 @@ inputBtn.addEventListener("click", function () {
 // inputBtn.addEventListener("click", function () {
 //   console.log("button clicked");
 // });
+
+////////write your first addEventListener //////
