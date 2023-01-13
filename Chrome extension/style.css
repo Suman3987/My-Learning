@@ -1,4 +1,4 @@
-/* body {
+body {
   margin: 0;
   padding: 10px;
   font-family: Roboto, italic, sans-serif;
@@ -18,9 +18,9 @@ button {
   border: none;
   border-radius: 2px;
   font-weight: bold;
-} */
+}
 
-html,
+/* html,
 body {
   margin: 0;
   padding: 10px;
@@ -35,4 +35,4 @@ body {
   margin: 20px auto;
   color: white;
   font-weight: bold;
-}
+} */
