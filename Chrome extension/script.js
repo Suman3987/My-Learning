@@ -55,3 +55,7 @@ shippingCost = 15;
 shippingTime = " 7-14 days";
 
 // Calculating the full price
+let fullPrice = basePrice - discount + shippingCost;
+
+//  Finally, notifying the customer
+console.log("Total cost:" + fullPrice + ". It will arrive in " + shippingTime);
