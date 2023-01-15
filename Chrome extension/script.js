@@ -34,10 +34,10 @@
 
 ///////when to use let and const/////
 
-const playerName = "Per";
-let credits = 45;
+// const playerName = "Per";
+// let credits = 45;
 
-credits = credits - 10;
+// credits = credits - 10;
 
 // If possible, use const. If not, use let
 
@@ -45,8 +45,8 @@ credits = credits - 10;
 
 // The customer wants to order some stuff. Here are the details:
 
-let basePrice = 520;
-let discount = 120;
+const basePrice = 520;
+const discount = 120;
 let shippingCost = 12;
 let shippingTime = "5-12 days";
 
@@ -55,7 +55,20 @@ shippingCost = 15;
 shippingTime = " 7-14 days";
 
 // Calculating the full price
-let fullPrice = basePrice - discount + shippingCost;
+const fullPrice = basePrice - discount + shippingCost;
 
 //  Finally, notifying the customer
-console.log("Total cost:" + fullPrice + ". It will arrive in " + shippingTime);
+// console.log("Total cost:" + fullPrice + ". It will arrive in " + shippingTime);
+
+// lesson 10 Push to the myLeads array
+
+let myLeads = [];
+const inputEL = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+
+//  Push the value "www.awesomelead.com" to myArray when the input button is clicked
+
+inputBtn.addEventListener("click", function () {
+  myLeads.push("www.awesomelead.com");
+  console.log(myLeads);
+});
