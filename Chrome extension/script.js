@@ -75,17 +75,31 @@ const fullPrice = basePrice - discount + shippingCost;
 
 /////////// Push the value from the input field //////// 5hour 3 min
 
-let myLeads = [];
+// let myLeads = [];
+// const inputEL = document.getElementById("input-el");
+// const inputBtn = document.getElementById("input-btn");
+
+// inputBtn.addEventListener("click", function () {
+// Push the value from the inputEL into the myLeads array
+// instead of the hard-coded "www.awesomeleads.com" value
+// Google ->"get value from input field javascript"
+
+// myLeads.push(inputEL.value);
+
+// myLeads.push("www.awesomelead.com");
+//   console.log(myLeads);
+// });
+
+//////// use a for loop to log out leads////
+
+let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"];
 const inputEL = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 
 inputBtn.addEventListener("click", function () {
-  // Push the value from the inputEL into the myLeads array
-  // instead of the hard-coded "www.awesomeleads.com" value
-  // Google ->"get value from input field javascript"
-
   myLeads.push(inputEL.value);
-
-  // myLeads.push("www.awesomelead.com");
   console.log(myLeads);
 });
+for (let i = 0; i < myLeads.length; i++) {
+  console.log(myLeads[i]);
+}
