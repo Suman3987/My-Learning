@@ -101,7 +101,16 @@ inputBtn.addEventListener("click", function () {
   myLeads.push(inputEL.value);
   console.log(myLeads);
 });
-
+let listItems = "";
 for (let i = 0; i < myLeads.length; i++) {
-  ulEl.textContent += myLeads[i] + " ";
+  listItems += "<li>" + myLeads[i] + " </li> ";
+  ulEl.innerHTML = listItems; //5hour 23 min
+
+  //USE createElement() and append()instead of innerHTML/////
+  // const li = document.createElement("li");
+  // li.textContent = myLeads[i];
+  // ulEl.append(li);
 }
+//////// Improving the performance of our app ///////
+
+/////// Create the render function ///////
